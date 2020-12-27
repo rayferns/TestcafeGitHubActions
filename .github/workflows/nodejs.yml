@@ -8,8 +8,9 @@ jobs:
     runs-on: windows-latest
     
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Install TestCafe from npm and Run Tests
         uses: DevExpress/testcafe-action@latest
         with:
+          version: "1.10.0"
           args: "chrome tests"
